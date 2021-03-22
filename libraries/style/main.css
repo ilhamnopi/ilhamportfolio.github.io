@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+}
+
+section.header-section {
+  background-color: #222831;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+h1.judul{
+ font-weight: bold;
+ font-size: 3rem;
+ color: white;
+ margin-bottom: 20px;
+}
+
