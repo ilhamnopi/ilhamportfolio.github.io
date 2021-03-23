@@ -210,6 +210,10 @@ h2.aboutme {
   margin: auto;
   width: 70vmin;
 }
+p.about-deskripsi {
+  text-align: justify;
+  padding: 5px;
+}
 /* END About */
 
 /* // Extra small devices (portrait phones, less than 576px) */
