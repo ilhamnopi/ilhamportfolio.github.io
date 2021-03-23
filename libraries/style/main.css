@@ -8,6 +8,7 @@
 html,
 body {
   background-color: #222831;
+  color: white;
 }
 @font-face {
   font-family: "montserat";
@@ -200,30 +201,14 @@ div.header-image img {
 }
 /* end-header */
 
-/* Paralax */
+/* START About */
 
-div.paralax {
-  width: 100%;
-  height: 500px;
-  background-image: url(../images/1.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: block;
-  position: relative;
-}
-div.paralax::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  inset: 0px;
-  opacity: 0.9;
+h2.aboutme {
+  font-family: "montserat";
 }
 
-/* End Paralax */
+/* END About */
+
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   div.header-left {
