@@ -22,12 +22,17 @@
   src: url(../fonts/OpenSans-SemiBold.ttf);
 }
 /* start:navbar */
-.navbar-brand {
+.navbar-brand,
+span.ilham {
   font-family: "montserat";
+}
+span.ilham {
+  color: #ffc75f;
 }
 li.nav-item .active {
   font-family: "opensans-semibold";
 }
+
 li.nav-item a.nav-link:hover {
   text-decoration: underline #ffc75f !important;
 }
@@ -48,6 +53,18 @@ section.header-section {
   background-color: #222831;
   position: relative;
   overflow: hidden;
+  height: 100vh;
+}
+section.header-section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(180deg, #585d94 0%, rgba(88, 93, 148, 0) 100%);
+  border-radius: 50%;
+  top: -200px;
+  left: -100px;
 }
 
 h1.judul {
@@ -91,9 +108,7 @@ a.awal img.header-icon {
   transition: 0.3s;
   width: 40px;
 }
-a.awal img.header-icon:hover {
-  transform: rotate(45deg);
-}
+
 a.awal {
   position: relative;
 }
@@ -101,9 +116,10 @@ a.awal:nth-child(1)::after {
   content: "Github";
   position: absolute;
   color: #ffc75f;
-  line-height: 30px;
+  line-height: 40px;
   font-size: 12px;
   opacity: 0;
+  right: 3px;
 }
 a.awal:nth-child(1):hover::after {
   animation: LeftAndRight;
@@ -113,15 +129,17 @@ a.awal:nth-child(1):hover::after {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-direction: normal, alternate;
+  right: 3px;
 }
-/* instagram icon */
+/* start Instagram */
 a.awal:nth-child(2)::after {
   content: "Instagram";
   position: absolute;
   color: #ffc75f;
-  line-height: 30px;
+  line-height: 40px;
   font-size: 12px;
   opacity: 0;
+  right: -5px;
 }
 a.awal:nth-child(2):hover::after {
   animation: LeftAndRight;
@@ -132,15 +150,15 @@ a.awal:nth-child(2):hover::after {
   animation-fill-mode: forwards;
   animation-direction: normal, alternate;
 }
-
 /* Facebook */
 a.awal:nth-child(3)::after {
-  content: "Instagram";
+  content: "Facebook";
   position: absolute;
   color: #ffc75f;
-  line-height: 30px;
+  line-height: 40px;
   font-size: 12px;
   opacity: 0;
+  right: -6px;
 }
 a.awal:nth-child(3):hover::after {
   animation: LeftAndRight;
@@ -153,17 +171,24 @@ a.awal:nth-child(3):hover::after {
 }
 @keyframes LeftAndRight {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(10px);
     opacity: 0;
   }
-  50% {
-    transform: translateY(20px);
-    opacity: 0.5;
-  }
+
   100% {
-    transform: translateY(30px);
+    transform: translateY(40px);
     opacity: 1;
   }
 }
-
+.position-absolute {
+  bottom: 0px;
+  right: 0px;
+}
+div.header-image img {
+  width: 50vmax;
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  right: 0px;
+}
 /* end-header */
