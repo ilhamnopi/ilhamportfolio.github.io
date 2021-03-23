@@ -55,6 +55,15 @@ section.header-section {
   overflow: hidden;
   height: 100vh;
 }
+section.header-section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  inset: 0px;
+  background: linear-gradient(0.3deg, #040506 0.27%, rgba(4, 5, 6, 0.94609) 8.72%, rgba(4, 5, 6, 0.915621) 15.85%, rgba(4, 4, 6, 0.872696) 22.72%, rgba(0, 0, 0, 0) 97.77%);
+}
 section.header-section::before {
   content: "";
   display: block;
@@ -193,15 +202,6 @@ div.header-image img {
   display: block;
   bottom: 0px;
   right: 0px;
-}
-div.header-overlay {
-  position: absolute;
-  background-color: black;
-  display: block;
-  height: 100vh;
-  width: 100%;
-  inset: 0px;
-  background: linear-gradient(0.3deg, #040506 0.27%, rgba(4, 5, 6, 0.94609) 8.72%, rgba(4, 5, 6, 0.915621) 15.85%, rgba(4, 4, 6, 0.872696) 22.72%, rgba(0, 0, 0, 0) 97.77%);
 }
 /* end-header */
 
