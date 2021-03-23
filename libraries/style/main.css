@@ -206,7 +206,10 @@ div.header-image img {
 h2.aboutme {
   font-family: "montserat";
 }
-
+.about-image img {
+  margin: auto;
+  width: 70vmin;
+}
 /* END About */
 
 /* // Extra small devices (portrait phones, less than 576px) */
