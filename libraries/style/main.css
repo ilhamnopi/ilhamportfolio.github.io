@@ -215,7 +215,14 @@ p.about-deskripsi {
   padding: 5px;
 }
 /* END About */
-
+div.paralax {
+  background-image: url(../images/ilham.png);
+  background-attachment: fixed;
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   div.header-left {
