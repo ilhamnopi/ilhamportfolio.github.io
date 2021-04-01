@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../libraries/bootstrap/css/bootstrap.css" />
+    <!-- data-aos.css -->
+    <link rel="stylesheet" href="../libraries/data-aos/aos.css">
+    <!-- fontfamily -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="../libraries/style/main.css" />
     <title>Portfolio</title>
   </head>
 
-  <body>
+  <body  style=" background: linear-gradient(180deg, #222831 0%, #0a0b0e 100%);
+  color: white;">
+    <!-- button scroll top -->
+    <a href="#" onclick="topFunction()" id="myBtn" title="Go to Top"> <i class="fas fa-arrow-circle-up"></i> </a>
+
+
     <!-- START: HEADER -->
     <section class="header-section">
       <div class="container">
@@ -37,23 +46,26 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="#aboutme" class="nav-link mr-2 text-white">About Me</a>
+                  <a href="#about" class="nav-link mr-2 text-white">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#kelas" class="nav-link mr-2 text-white">Portfolio</a>
+                  <a href="#portfolio" class="nav-link mr-2 text-white">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#mentor" class="nav-link mr-2 text-white">progress</a>
+                  <a href="#skills" class="nav-link mr-2 text-white">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#contact" class="nav-link mr-2 text-white">Contact</a>
+                  <a href="#contactme" class="nav-link mr-2 text-white">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="login.html" class="nav-link mr-2 text-white">Login</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
         <!-- end navbar -->
-        <div class="row">
+        <div class="row" >
           <div class="col-sm-12 col-md-8 align-self-start mt-5 pl-3 header-left" style="z-index: 9999">
             <h1 class="judul">Hi,</h1>
             <h1 class="judul">I'am <span class="ilham">Ilham</span></h1>
@@ -61,13 +73,13 @@
             <a href="#" class="btn btn-contact-me px-3 py-1">Contact Me</a>
 
             <div class="icons mt-5">
-              <a class="awal" href="#"><img class="header-icon" width="30" src="../libraries/icons/github.svg" alt="ilham nopi hendri" /></a>
-              <a class="awal" href="#"><img class="header-icon" width="30" src="../libraries/icons/instagram.svg" alt="ilham nopi hendri" /></a>
+              <a class="awal" href="https://github.com/ilhamnopi"><img class="header-icon" width="30" src="../libraries/icons/github.svg" alt="ilham nopi hendri" /></a>
+              <a class="awal" href="https://www.instagram.com/ilhamnopihendri/"><img class="header-icon" width="30" src="../libraries/icons/instagram.svg" alt="ilham nopi hendri" /></a>
               <a class="awal" href="#"><img class="header-icon" width="30" src="../libraries/icons/facebook.svg" alt="ilham nopi hendri" /></a>
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-6 position-absolute">
+          <div class="col-sm-12 col-md-6 position-absolute" >
             <div class="header-image">
               <img src="../libraries/images/images-header-ilham.png" alt="" />
             </div>
@@ -79,19 +91,22 @@
     <!-- END: HEADER -->
 
     <!-- START: ABOUT -->
-    <section class="about-section mb-5">
+    <section class="about-section mb-5" id="about" >
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-            <h2 class="aboutme text-center text-white mt-5">About Me</h2>
+          <div class="col-sm-12" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
+            <h2 class="aboutme text-center text-white mt-5" >About Me</h2>
           </div>
-          <div class="col-sm-12 col-md-6 align-self-center about-image d-flex justify-content-center">
+          <div class="col-sm-12 col-md-6 align-self-center about-image d-flex justify-content-center" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
             <img src="../libraries/images/q.png" alt="" />
           </div>
           <div class="col-sm-12 col-md-6 align-self-center">
-            <p class="about-deskripsi">
-              Hi My name is ilham i was born in jakarta 08th ofNov i am a web developer and also student in STMIK Indonesia Padang Currently, i do a lot of front-end Dev and not very much programming. i would like to change that. I am
-              starting to learn React, Nodjs, and refining my JS skills. This is my first time joining a community of developers. so i'm nervous and very excited to join.
+            <p class="about-deskripsi" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+              Hi My name is ilham i was born in jakarta 08th Of Nov i am a web developer and also student in STMIK Indonesia Padang Currently, i do a lot of front-end Dev and not very much programming. i would like to change that. I am
+              starting to learn PHP, Mysql, and increase my JS skills.
             </p>
           </div>
         </div>
@@ -100,16 +115,18 @@
     <!-- END:ABOUT -->
 
     <!-- START Portfolio -->
-    <section class="portfolio-section mb-5 pb-5" style="background-color: #2a313c">
+    <section class="portfolio-section mb-5 pb-5" id="portfolio" >
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-12">
             <h2 class="aboutme text-center text-white mt-5 mb-4">Portfolio</h2>
           </div>
           <!-- Start card -->
-          <div class="col-sm-12 col-md-6 col-lg-4 pt-4">
-            <div class="card">
-              <div class="card-img-top d-flex justify-content-center" style="background-image: url(../libraries/images/Frame\ 4.png)">
+          <div class="col-sm-12 col-md-6 col-lg-4 pt-4" data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-center">
+            <div class="card portfolio-card">
+              <div class="card-img-top d-flex justify-content-center" style="background-image: url(../libraries/images/frame1.png)">
                 <a class="seemore" href=""
                   ><span><img src="../libraries/icons/seemore.svg" alt="" /></span
                 ></a>
@@ -123,9 +140,11 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 pt-4">
-            <div class="card">
-              <div class="card-img-top d-flex justify-content-center" style="background-image: url(../libraries/images/Frame\ 4.png)">
+          <div class="col-sm-12 col-md-6 col-lg-4 pt-4" data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-center">
+            <div class="card portfolio-card">
+              <div class="card-img-top d-flex justify-content-center" style="background-image: url(../libraries/images/frame4.png)">
                 <a class="seemore" href=""
                   ><span><img src="../libraries/icons/seemore.svg" alt="" /></span
                 ></a>
@@ -133,16 +152,18 @@
 
               <div class="card-body">
                 <h5 class="card-title text-dark">Web Design</h5>
-                <p class="card-text text-dark">website pendaftaran peserta kafekoding STMIK Indonesia Padang</p>
+                <p class="card-text text-dark">website Travel</p>
                 <a href="#" class="detail">Lihat detail</a>
               </div>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 pt-4">
-            <div class="card">
-              <div class="card-img-top d-flex justify-content-center" style="background-image: url(../libraries/images/Frame\ 4.png)">
+          <div class="col-sm-12 col-md-6 col-lg-4 pt-4" data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-center">
+            <div class="card  portfolio-card">
+              <div class="card-img-top d-flex justify-content-center" style="background-image: url(../libraries/images/frame3.png)">
                 <a class="seemore" href=""
                   ><span><img src="../libraries/icons/seemore.svg" alt="" /></span
                 ></a>
@@ -150,7 +171,25 @@
 
               <div class="card-body">
                 <h5 class="card-title text-dark">Web Design</h5>
-                <p class="card-text text-dark">website pendaftaran peserta kafekoding STMIK Indonesia Padang</p>
+                <p class="card-text text-dark">Tampilan web portfolio sederhana</p>
+                <a href="#" class="detail">Lihat detail</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 pt-4" data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-center">
+            <div class="card portfolio-card">
+              <div class="card-img-top d-flex justify-content-center" style="background-image: url(../libraries/images/frame2.png)">
+                <a class="seemore" href=""
+                  ><span><img src="../libraries/icons/seemore.svg" alt="" /></span
+                ></a>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-dark">UI/UX</h5>
+                <p class="card-text text-dark">Tampilan UI /UX portfolio sederhana</p>
                 <a href="#" class="detail">Lihat detail</a>
               </div>
             </div>
@@ -160,8 +199,100 @@
     </section>
     <!-- END Portfolio -->
 
+    <!-- START skils -->
+    <section class="progress-section" id="skills">
+      <div class="container" data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-anchor-placement="top-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="aboutme text-center text-white mt-5">Skills</h2>
+          </div>
+          <div class="col-sm-12 col-md-6 progress-image d-flex justify-content-center">
+            <img src="../libraries/images/ilhamkanan.png" alt="" />
+          </div>
+          <div class="col-sm-12 col-md-6 progress-text align-self-center d-flex justify-content-center flex-column">
+            <h5 class="text-progress">HTML</h5>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"style="width: 90%; background-color:#585d94;">90%</div>
+              </div>
+              <h5 class="text-progress">CSS</h5>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"style="width: 85%; background-color:#585d94;"> 85% </div>
+              </div>
+              <h5 class="text-progress">Bootstrap</h5>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"style="width: 85%; background-color:#585d94;"> 85% </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END skils -->
+
+    <!-- Start Contact me -->
+    <section class="section-contactMe my-5 " id="contactme">
+      <div class="container " data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-anchor-placement="top-center">
+        <div class="row justify-content-center">
+          <div class="col-sm-12">
+            <h2 class="aboutme text-center text-white mt-5">Contact Me</h2>
+          </div>
+         
+            <div class="col-sm-12 col-md-10 col-lg-8 ">
+              <form>
+                <div class="form-group ">
+                  <label for="nama">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="nama" placeholder="Masukan nama Lengkap">
+                </div>
+                <div class="form-group ">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Masukan Email">
+                </div>
+                <div class="form-group">
+                  <label for="pesan">Pesan</label>
+                  <textarea name="" id="" cols="30" rows="5" class="form-control contact-me"></textarea>
+                </div>
+                <button class="btn btn-contact-me btn-block mt-4">Send</button>
+              </form>
+            </div>
+          </div>
+      
+      </div>
+    </section>
+    <!-- END Contact me -->
+
+    <!-- START: FOOTER -->
+    
+    
+    <footer >
+      <div class="container footer-container">
+        <div class="row  justify-content-center ">
+          <div class="col-sm-6 d-flex justify-content-center mt-5 footer-body">
+            <a href="https://www.instagram.com/ilhamnopihendri/"class="text-center text-white"><i class="fab fa-instagram fa-2x  m-3"></i><br>Instagram</a>
+            <a href="#"class="text-center text-white"><i class="fab fa-twitter fa-2x m-3"></i><br>Twitter</a>
+            <a href="https://github.com/ilhamnopi"class="text-center text-white"><i class="fab fa-github fa-2x  m-3"></i><br>Github</a>
+          </div>
+        </div>
+        
+        <div class="row justify-content-center mt-4">
+          <div class="col d-flex justify-content-center">
+            <span class="mb-4 copyright text-light text-center">&copy; copy right 2020 | Design with <i class="fas fa-heart"></i> Ilham Nopi Hendri  </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END: FOOTER -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../libraries/jquery/jquery-3.5.1.js"></script>
     <script src="../libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="../libraries/data-aos/aos.js"></script>
+    <script src="../libraries/script/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
