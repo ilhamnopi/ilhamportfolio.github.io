@@ -48,30 +48,7 @@
 }
 
 /* costum style */
-div.all-cards {
-  border-left: 10px solid #f4c247;
-}
-div.admin-cards {
-  border-radius: 30px;
-}
-h3.admin-judul {
-  color: #02366e;
-}
-p.admin-paragraph {
-  color: #bdbdbd;
-}
-.image-admin img {
-  width: 30vmin;
-}
-div.card-data {
-  border-radius: 30px;
-}
-img.image-table {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-  border-radius: 20px;
-}
+
 /* end costum style */
 
 html {
