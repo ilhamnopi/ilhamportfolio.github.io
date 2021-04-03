@@ -696,7 +696,7 @@ textarea.contact-me:focus {
   /*back home login */
   div.btn-back {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
