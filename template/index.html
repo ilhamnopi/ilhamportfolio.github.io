@@ -14,8 +14,7 @@
     <title>Portfolio</title>
   </head>
 
-  <body  style=" background: linear-gradient(180deg, #222831 0%, #0a0b0e 100%);
-  color: white;">
+  <body>
     <!-- button scroll top -->
     <a href="#" onclick="topFunction()" id="myBtn" title="Go to Top"> <i class="fas fa-arrow-circle-up"></i> </a>
 
@@ -24,45 +23,60 @@
     <section class="header-section">
       <div class="container">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light mb-0 mb-lg-3 pl-0" style="z-index: 9999">
+        <nav class="navbar navbar-expand-lg navbar-light mb-0 mb-lg-3 pl-0 " style="z-index: 9999">
           <div class="container pl-0">
             <!-- navbar-brand -->
             <div class="brand">
               <a href="#" class="navbar-brand text-white pt-3 pl-0"
-                ><h4><span class="ilham">Ilham</span> Nopi Hendri</h4></a
-              >
+                ><h4><span class="ilham">Port</span>folio</h4></a>
             </div>
+            
             <!--START: button-hamburger -->
-            <div class="hamburger-menu align-self-center">
+            <div class="hamburger-menu align-self-center ml-auto">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"> </span>
               </button>
             </div>
             <!-- End Button-hamburger -->
-            <div class="collapse navbar-collapse align-self-center" id="navbar">
+
+            <!-- start dark mode button -->
+            <div class="darkmode align-self-center pl-2 d-flex align-items-center justify-content-center">
+              <input type="checkbox" class="checkbox-darkmoode" id="chk">
+              <label class="label-dark-mode" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+              </label>
+            </div>
+            <!-- end darkmode button -->
+
+            <div class="collapse navbar-collapse align-self-center navbar-darkmoode" id="navbar">
               <ul class="navbar-nav ml-auto pr-0">
                 <li class="nav-item active">
-                  <a href="#home" class="nav-link mr-2 active text-white">Home</a>
+                  <a href="#home" class="nav-link mr-2 active">Home</a>
                 </li>
 
                 <li class="nav-item">
-                  <a href="#about" class="nav-link mr-2 text-white">About Me</a>
+                  <a href="#about" class="nav-link mr-2">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#portfolio" class="nav-link mr-2 text-white">Portfolio</a>
+                  <a href="#portfolio" class="nav-link mr-2">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#skills" class="nav-link mr-2 text-white">Skills</a>
+                  <a href="#skills" class="nav-link mr-2">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#contactme" class="nav-link mr-2 text-white">Contact</a>
+                  <a href="#contactme" class="nav-link mr-2">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a href="login.html" class="nav-link mr-2 text-white">Login</a>
+                  <a href="login.html" class="nav-link mr-2">Login</a>
                 </li>
+               
               </ul>
             </div>
+            
           </div>
+
         </nav>
         <!-- end navbar -->
         <div class="row" >

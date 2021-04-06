@@ -48,7 +48,21 @@
 }
 
 /* costum style */
+* {
+  /* border: 1px solid black; */
+}
+ul.sidebar-dark-accordion {
+  background-color: #ffc75f;
+}
+a.btn.btn-add {
+  background-color: #ffc75f;
+  color: white;
+}
 
+div.card-table {
+  border-radius: 30px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.05);
+}
 /* end costum style */
 
 html {
